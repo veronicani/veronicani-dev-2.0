@@ -29,6 +29,7 @@ type tProject = {
   };
   tags: string[];
   imageUrl: string;
+  imageAlt: string;
   description: string;
   notes?: string;
 };
