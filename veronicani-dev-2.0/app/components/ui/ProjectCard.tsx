@@ -1,13 +1,42 @@
 import Image from "next/image";
 import Card from "./Card";
+import Tag from "./Tag";
+import Credentials from "./Credentials";
+import CustomLink from "./CustomLink";
 import { tProject } from "@/app/lib/types";
-import Link from "next/link";
 
 type tProjectCardProps = { project: tProject };
 
 export default function ProjectCard({ project }: tProjectCardProps) {
-  const { title, imageUrl, imageAlt, tags, description, loginCreds, urls } =
-    project;
+  const {
+    title,
+    imageUrl,
+    imageAlt,
+    tags,
+    description,
+    loginCreds,
+    urls,
+    notes,
+  } = project;
+
+  function provideAdminOrGuestCreds() {
+    if (!loginCreds) return null;
+    if (loginCreds.admin) {
+      return (
+        <Credentials
+          username={loginCreds!.admin.username}
+          password={loginCreds!.admin.password}
+        />
+      );
+    } else if (loginCreds.guest) {
+      return (
+        <Credentials
+          username={loginCreds!.guest.username}
+          password={loginCreds!.guest.password}
+        />
+      );
+    }
+  }
 
   return (
     <Card className="Project-card">
@@ -20,24 +49,30 @@ export default function ProjectCard({ project }: tProjectCardProps) {
         ))}
       </div>
       <Image
-        src={imageUrl}
+        src={`/static/demos/${imageUrl}`}
         alt={imageAlt}
+        width={500}
+        height={0}
       />
       <h4>{title}</h4>
       <div>
-        {/* {urls.github && <Link displayText="Github" url={urls.github}/>}  */}
-        {/* {urls.demo && <Link displayText="Demo" url={urls.github}/>}  */}
+        {urls.github && (
+          <CustomLink
+            displayText="Github"
+            url={urls.github}
+          />
+        )}
+        {urls.demo && (
+          <CustomLink
+            displayText="Demo"
+            url={urls.demo}
+          />
+        )}
       </div>
+      <div>{provideAdminOrGuestCreds()}</div>
       <div>
-        {loginCreds?.guest &&
-          <>
-          <div>username:</div>
-          <Copyable credential={loginCreds.guest.username} />
-          <div>password:</div>
-          <Copyable credential={loginCreds.guest.password} />
-          </>
-        }
-        {/* LOGIN CREDS FOR ADMIN */}
+        <p>{description}</p>
+        <small>{notes}</small>
       </div>
     </Card>
   );
