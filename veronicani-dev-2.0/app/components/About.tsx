@@ -1,7 +1,16 @@
-import SectionHeading from "./ui/SectionHeading";
 import Section from "./ui/Section";
 import Image from "next/image";
 
+/** About section.
+ * 
+ * Props:
+ * - none
+ * 
+ * State:
+ * - none
+ * 
+ * App -> About -> { Hi section, Previously section }
+ */
 export default function About() {
   return (
     <section className="About">

@@ -7,6 +7,15 @@ import { tProject } from "@/app/lib/types";
 
 type tProjectCardProps = { project: tProject };
 
+/** Project card component. 
+ * 
+ * Props:
+ * - project: project data object
+ * State:
+ * - none
+ * 
+ * Projects -> Section -> { SectionHeading, ProjectCard[] }
+*/
 export default function ProjectCard({ project }: tProjectCardProps) {
   const {
     title,
