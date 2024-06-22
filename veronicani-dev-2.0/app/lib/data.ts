@@ -46,7 +46,7 @@ const PROJECTS: tProject[] = [
       demo: "https://veronicani.com/",
     },
     tags: ["Webflow", "Adobe CC", "After Effects"],
-    imageUrl: "public/projects/demos/veronicani-com-demo.gif",
+    imageUrl: "veronicani-com-demo.gif",
     imageAlt: "Demo of veronicani.com",
     description:
       "A bespoke website designed with Webflow to showcase my design and" +
@@ -76,7 +76,7 @@ const PROJECTS: tProject[] = [
       "SASS",
       "PostgreSQL",
     ],
-    imageUrl: "public/projects/demos/flaskcafe-demo.gif",
+    imageUrl: "flaskcafe-demo.gif",
     imageAlt: "Demo of Flask Cafe app",
     description:
       "A full stack MVP Flask application with Google Maps API integration to" +
@@ -100,7 +100,7 @@ const PROJECTS: tProject[] = [
       },
     },
     tags: ["React", "Express", "Node.js", "PostgreSQL", "Jest"],
-    imageUrl: "public/projects/demos/jobly-demo.gif",
+    imageUrl: "jobly-demo.gif",
     imageAlt: "Demo of Jobly app",
     description:
       "A job board application built with a React frontend. It includes a" +
@@ -117,7 +117,7 @@ const PROJECTS: tProject[] = [
       github: "https://github.com/veronicani/sharebnb-react",
     },
     tags: ["Flask", "Jinja", "Google Maps API", "Bootstrap"],
-    imageUrl: "public/projects/demos/sharebnb-demo.gif",
+    imageUrl: "sharebnb-demo.gif",
     imageAlt: "Demo of Sharebnb app",
     description:
       "Full stack space-sharing application with a React frontend. It" +
