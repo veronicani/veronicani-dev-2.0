@@ -4,7 +4,7 @@ export default function Tag({ tag }: { tag: string }) {
     <div
       className="md:w-3/4 flex" //style tag width here
     >
-      <small>{tag}</small>
+      <p>{tag}</p>
     </div>
   );
 }
