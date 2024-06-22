@@ -1,8 +1,7 @@
+import 'bootstrap-icons/font/bootstrap-icons.css';
+import "./globals.css";
 import type { Metadata } from "next";
 import { fira } from '@/app/ui/fonts';
-import "./globals.css";
-
-
 
 
 export const metadata: Metadata = {
