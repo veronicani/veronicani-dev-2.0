@@ -8,7 +8,8 @@ type tNavItem = {
 type tSocialLink = {
   name: string;
   url: string;
-  icon: string;
+  cls: string;
+  path: string;
 };
 
 type tProject = {
