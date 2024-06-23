@@ -15,7 +15,7 @@ import ButtonLink from "./ui/ButtonLink";
  */
 export default function Experience() {
   return (
-    <Section heading="Experience">
+    <Section heading="Experience" id="#experience">
       {EXPERIENCES.map((experience) => (
         <ExperienceCard
           key={`${experience.position}${experience.company}`}

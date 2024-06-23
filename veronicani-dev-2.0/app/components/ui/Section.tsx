@@ -1,10 +1,11 @@
 import SectionHeading from "./SectionHeading";
 
-type tSectionProps = { heading: string, children: React.ReactNode };
+type tSectionProps = { id: string, heading: string, children: React.ReactNode };
 
 /** Section: Component for styling a section (e.g. Hi, Previously, Projects, etc.)
  * 
  * Props:
+ * - id: id for navigation to jump to 
  * - heading: title for the section
  * - children: children elements
  * 
@@ -13,10 +14,11 @@ type tSectionProps = { heading: string, children: React.ReactNode };
  * 
  * App -> Section -> { SectionHeading, children }
  */
-export default function Section({ heading, children }: tSectionProps) {
+export default function Section({ id, heading, children }: tSectionProps) {
   return (
     <section
-      className="md:w-3/4 flex" //style section width here
+      id={id}
+      className="md:w-3/4 flex-col"
     >
       <SectionHeading heading={heading}/>
       <div>{children}</div>
