@@ -1,8 +1,7 @@
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import "bootstrap-icons/font/bootstrap-icons.css";
 import "./globals.css";
 import type { Metadata } from "next";
-import { fira } from '@/app/ui/fonts';
-
+import { fira, dm_serif } from "@/app/ui/fonts";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={fira.className}>{children}</body>
+      <body
+        className={`${fira.variable} font-mono ${dm_serif.variable} font-display`}
+      >
+        {children}
+      </body>
     </html>
   );
 }

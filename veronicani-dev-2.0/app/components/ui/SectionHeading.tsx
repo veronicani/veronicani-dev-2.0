@@ -1,10 +1,8 @@
-import { dm_serif } from "../../ui/fonts";
-
 type tSectionHeadingProps = { heading: string };
-
+/** SectionHeading: Styling for section heading. */
 export default function SectionHeading({ heading }: tSectionHeadingProps) {
   return (
-    <h3 className={`${dm_serif.className} text-xl`}>
+    <h3>
       {heading}
     </h3>
   );
