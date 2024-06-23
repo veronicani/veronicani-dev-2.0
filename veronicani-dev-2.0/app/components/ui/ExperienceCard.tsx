@@ -30,14 +30,14 @@ export default function ExperienceCard({ experience }: tExperienceCardProps) {
           <h5>{location}</h5>
         </div>
       </div>
-      <ol>
+      <ul>
         {description.map((d) => (
           <Accomplishment
             key={d}
             description={d}
           />
         ))}
-      </ol>
+      </ul>
     </Card>
   );
 }
