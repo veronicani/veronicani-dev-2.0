@@ -6,9 +6,9 @@
 export default function CredentialsCopy({ credential }: { credential: string }) {
   return (
     <div
-      className="md:w-3/4 flex"
+      className="outline outline-2 outline-gray-light px-1 rounded text-primary-blue"
     >
-      <p>{credential}</p>
+      {credential}
     </div>
   );
 }

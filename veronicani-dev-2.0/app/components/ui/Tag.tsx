@@ -2,9 +2,10 @@
 export default function Tag({ tag }: { tag: string }) {
   return (
     <div
-      className="md:w-3/4 flex" //style tag width here
+      className="px-3 py-1 rounded-full outline outline-2 outline-primary-blue 
+      text-xs text-primary-blue font-bold"
     >
-      <p>{tag}</p>
+      {tag}
     </div>
   );
 }

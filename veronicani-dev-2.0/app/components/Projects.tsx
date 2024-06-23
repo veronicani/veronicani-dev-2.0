@@ -14,7 +14,7 @@ import ProjectCard from "./ui/ProjectCard";
  */
 export default function Projects() {
   return (
-    <Section heading="Projects">
+    <Section heading="Projects" id="#projects">
       {PROJECTS.map((project) => (
         <ProjectCard
           key={project.title}

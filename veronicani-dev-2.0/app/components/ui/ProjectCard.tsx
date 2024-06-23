@@ -49,7 +49,7 @@ export default function ProjectCard({ project }: tProjectCardProps) {
 
   return (
     <Card className="Project-card">
-      <div>
+      <div className="flex flex-wrap gap-2 pb-2">
         {tags.map((tag) => (
           <Tag
             key={tag}
@@ -60,11 +60,11 @@ export default function ProjectCard({ project }: tProjectCardProps) {
       <Image
         src={`/static/demos/${imageUrl}`}
         alt={imageAlt}
-        width={500}
+        width={700}
         height={0}
       />
-      <h4>{title}</h4>
-      <div>
+      <h4 className="text-2xl font-bold text-gray-dark">{title}</h4>
+      <div className="flex gap-2">
         {urls.github && (
           <CustomLink
             displayText="Github"
@@ -79,9 +79,9 @@ export default function ProjectCard({ project }: tProjectCardProps) {
         )}
       </div>
       <div>{provideAdminOrGuestCreds()}</div>
-      <div>
+      <div className="pt-4">
         <p>{description}</p>
-        <small>{notes}</small>
+        <small className="text-gray-dark">{notes}</small>
       </div>
     </Card>
   );

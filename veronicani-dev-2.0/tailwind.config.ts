@@ -16,6 +16,13 @@ const config: Config = {
       fontFamily: {
         "mono": ["var(--font-fira)"],
         "display": ["var(--font-dm-serif)"],
+      },
+      colors: {
+        "primary-blue": "#2462FF",
+        "gray-dark": "#4D4D4D",
+        "gray-light": "#707070",
+        "gray-bg": "#F6F6F6",
+        "black": "black",
       }
     },
   },

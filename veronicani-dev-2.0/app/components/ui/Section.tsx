@@ -18,7 +18,7 @@ export default function Section({ id, heading, children }: tSectionProps) {
   return (
     <section
       id={id}
-      className="md:w-3/4 flex-col"
+      className="flex-col py-5"
     >
       <SectionHeading heading={heading}/>
       <div>{children}</div>
