@@ -18,7 +18,10 @@ const config: Config = {
         "display": ["var(--font-dm-serif)"],
       },
       colors: {
-        "primary-blue": "#2462FF",
+        "blue": {
+          "500": "#2462FF",
+          "600": "#0042EA",
+        },
         "gray-dark": "#4D4D4D",
         "gray-light": "#707070",
         "gray-bg": "#F6F6F6",
