@@ -4,6 +4,7 @@ import Tag from "./Tag";
 import Credentials from "./Credentials";
 import CustomLink from "./CustomLink";
 import { tProject } from "@/app/lib/types";
+import CardHeading from "./CardHeading";
 
 type tProjectCardProps = { project: tProject };
 
@@ -63,7 +64,7 @@ export default function ProjectCard({ project }: tProjectCardProps) {
         width={700}
         height={0}
       />
-      <h4 className="text-2xl font-bold text-gray-dark">{title}</h4>
+      <CardHeading classes="text-gray-dark" heading={title} />
       <div className="flex gap-2">
         {urls.github && (
           <CustomLink

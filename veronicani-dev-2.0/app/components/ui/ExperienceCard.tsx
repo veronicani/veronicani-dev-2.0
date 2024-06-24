@@ -1,4 +1,5 @@
 import Card from "./Card";
+import CardHeading from "./CardHeading";
 import Accomplishment from "./Accomplishment";
 import { tExperience } from "@/app/lib/types";
 
@@ -20,17 +21,22 @@ export default function ExperienceCard({ experience }: tExperienceCardProps) {
   return (
     <Card className="Experience-card">
       <div>
-        <h3>{position}</h3>
-        <h4>{company}</h4>
-        <div>
-          <div>
+        <CardHeading classes="text-blue-500" heading={position} />
+        <h5 className="text-gray-dark font-bold">{company}</h5>
+        <div className="flex justify-between">
+          <div className="flex gap-2">
             <h5>{years[0]}</h5>
-            {years[1] && <h5>{` - ${years[1]}`}</h5>}
+            {years[1] && 
+              <>
+              <h5>—</h5>
+              <h5>{years[1]}</h5>
+              </>
+            }     
           </div>
           <h5>{location}</h5>
         </div>
       </div>
-      <ul>
+      <ul className="group/bullets space-y-4">
         {description.map((d) => (
           <Accomplishment
             key={d}

@@ -11,10 +11,10 @@
 export default function Heading() {
   return (
     <div>
-      <h1 className="text-7xl text-gray-dark">
+      <h1 className="text-6xl lg:text-7xl text-gray-dark">
         Veronica Ni
       </h1>
-      <h2 className="text-primary-blue font-bold">
+      <h2 className="text-blue-500 font-bold">
         Design-first Software Engineer
       </h2>
     </div>

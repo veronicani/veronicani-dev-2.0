@@ -3,12 +3,13 @@
  * Props:
  * - credential: username / password / email
 */
-export default function CredentialsCopy({ credential }: { credential: string }) {
+type tCredentialsCopyProps = { credential: string, classes: string }
+export default function CredentialsCopy({ classes, credential }: tCredentialsCopyProps) {
   return (
-    <div
-      className="outline outline-2 outline-gray-light px-1 rounded text-primary-blue"
+    <p
+      className={`${classes} outline outline-1 outline-gray-400 rounded text-blue-500`}
     >
       {credential}
-    </div>
+    </p>
   );
 }

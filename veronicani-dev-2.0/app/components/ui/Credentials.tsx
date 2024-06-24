@@ -13,11 +13,11 @@ export default function Credentials({ username, password }: tCredentials ) {
     >
       <div className="flex space-x-2 text-gray-dark">
         <span>username:</span>
-        <CredentialsCopy credential={username} />
+        <CredentialsCopy classes="px-1" credential={username} />
       </div>
       <div className="flex space-x-2 text-gray-dark">
         <span>password:</span>
-        <CredentialsCopy credential={password} />
+        <CredentialsCopy classes="px-1" credential={password} />
       </div>
     </div>
   );

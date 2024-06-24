@@ -15,12 +15,14 @@ import ProjectCard from "./ui/ProjectCard";
 export default function Projects() {
   return (
     <Section heading="Projects" id="#projects">
-      {PROJECTS.map((project) => (
-        <ProjectCard
-          key={project.title}
-          project={project}
-        />
-      ))}
+      <ul className="group/list">
+        {PROJECTS.map((project) => (
+          <ProjectCard
+            key={project.title}
+            project={project}
+          />
+        ))}
+      </ul>
     </Section>
   );
 }
