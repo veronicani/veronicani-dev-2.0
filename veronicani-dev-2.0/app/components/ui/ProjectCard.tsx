@@ -63,6 +63,7 @@ export default function ProjectCard({ project }: tProjectCardProps) {
         alt={imageAlt}
         width={700}
         height={0}
+        className="rounded-lg"
       />
       <CardHeading classes="text-gray-dark" heading={title} />
       <div className="flex gap-2">
@@ -80,9 +81,9 @@ export default function ProjectCard({ project }: tProjectCardProps) {
         )}
       </div>
       <div>{provideAdminOrGuestCreds()}</div>
-      <div className="pt-4">
+      <div className="mt-4 flex flex-col gap-4">
         <p>{description}</p>
-        <small className="text-gray-dark">{notes}</small>
+        {notes && <small className="text-gray-dark">{notes}</small>}
       </div>
     </Card>
   );

@@ -11,7 +11,7 @@
 export default function Footer() {
   return (
     <footer className="lg:mt-12">
-      <small className="text-gray-light lg:opacity-50 lg:hover:opacity-100
+      <small className="text-gray-light lg:opacity-70 lg:hover:opacity-100
         transition motion-reduce:transition-none"
       >
         Drafted in Figma, built with Next.js and Tailwind. Deployed with Vercel.

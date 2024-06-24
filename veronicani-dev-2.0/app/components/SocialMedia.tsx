@@ -23,7 +23,7 @@ export default function SocialMedia() {
               xmlns="http://www.w3.org/2000/svg"
               width="2rem"
               height="2rem"
-              className={`bi ${cls} fill-gray-light lg:hover:fill-blue-500 transition motion-reduce:transition-none`}
+              className={`bi ${cls} fill-gray-400 lg:hover:fill-blue-500 transition motion-reduce:transition-none`}
               viewBox="0 0 16 16"
             >
               <path d={path} />
