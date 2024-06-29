@@ -15,7 +15,7 @@ import ButtonLink from "./ui/ButtonLink";
  */
 export default function Experience() {
   return (
-    <Section heading="Experience" id="#experience">
+    <Section heading="Experience" id="experience">
       <ol className="group/list flex flex-col lg:gap-4">
         {EXPERIENCES.map((experience) => (
           <ExperienceCard
