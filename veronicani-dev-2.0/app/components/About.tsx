@@ -13,9 +13,9 @@ import Image from "next/image";
  */
 export default function About() {
   return (
-    <section className="About" id="#about">
+    <section className="About" id="about">
       {/* Insert Image component here */}
-      <Section heading="Hi!" id="#about-hi">
+      <Section heading="Hi!" id="about-hi">
         <p>
           I'm a multi-disciplinary front-end software engineer and designer,
           with a 5+ year background in illustration, creative advertising,
@@ -28,7 +28,7 @@ export default function About() {
           design-first methodology to deliver impeccable user experiences.
         </p>
       </Section>
-      <Section heading="Previously..." id="#about-previously">
+      <Section heading="Previously..." id="about-previously">
         <p>
           I've spearheaded design and branding for interactive digital
           platforms, web + television animation, live events, photo shoots,
