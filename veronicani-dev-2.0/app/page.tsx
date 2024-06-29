@@ -10,7 +10,7 @@ import SocialMedia from "./components/SocialMedia";
 export default function Home() {
   return (
     <div className="container mx-auto p-4 md:px-8">
-      <div className="lg:flex lg:justify-around lg:gap-5">
+      <div className="lg:flex lg:justify-around lg:gap-12">
         <header
           className="space-y-4 pb-4 md:py-8 lg:pt-16 lg:pb-20 lg:sticky lg:top-0 lg:max-h-screen
         lg:flex lg:flex-col lg:justify-between"
