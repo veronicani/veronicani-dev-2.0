@@ -11,8 +11,6 @@ export default function Navigation() {
       {NAV_ITEMS.map((link) => (
         <li
           key={link.name}
-          //TODO: check if this method works to style active links
-          //https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#checking-active-links
         >
           <NavLink link={link} />
         </li>
