@@ -34,12 +34,12 @@ export default function CredentialsCopy({
       onClick={() => copyText(credential)}
     >
       <p
-        className={`${isActive ? "inline" : "hidden"} text-blue-500 transition-all lg:group-hover/creds:inline`}
+        className={`${isActive ? "inline" : "hidden"} absolute text-blue-500 transition-all lg:group-hover/creds:inline`}
       >
         {hoverText}
       </p>
       <p
-        className={`${isActive ? "hidden" : "inline"} text-blue-500 transition-all lg:group-hover/creds:hidden`}
+        className={`${isActive ? "opacity-0" : "opacity-100"} text-blue-500 transition-all lg:group-hover/creds:opacity-0`}
       >
         {credential}
       </p>
