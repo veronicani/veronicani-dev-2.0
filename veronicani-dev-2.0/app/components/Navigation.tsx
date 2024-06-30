@@ -1,6 +1,6 @@
 "use client";
 import { NAV_ITEMS } from "../lib/data";
-import Link from "next/link";
+import NavLink from "./ui/NavLink";
 import { usePathname } from "next/navigation";
 /** Navigation menu. */
 export default function Navigation() {
@@ -14,14 +14,7 @@ export default function Navigation() {
           //TODO: check if this method works to style active links
           //https://nextjs.org/docs/app/building-your-application/routing/linking-and-navigating#checking-active-links
         >
-          <Link
-            href={`/${link.href}`} //FIXME: not scrolling to section
-            className={`text-gray-dark ${
-              pathname === `/#${link.name}` ? "active" : ""
-            }`}
-          >
-            {link.name}
-          </Link>
+          <NavLink link={link} />
         </li>
       ))}
     </ul>
