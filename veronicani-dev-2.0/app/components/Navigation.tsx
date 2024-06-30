@@ -7,7 +7,7 @@ export default function Navigation() {
   const pathname = usePathname();
 
   return (
-    <ul className="hidden lg:flex lg:flex-col">
+    <ul className="hidden lg:flex lg:flex-col lg:gap-y-2">
       {NAV_ITEMS.map((link) => (
         <li
           key={link.name}
