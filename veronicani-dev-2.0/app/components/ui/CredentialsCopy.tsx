@@ -30,7 +30,7 @@ export default function CredentialsCopy({
 
   return (
     <div
-      className={`${classes} group/creds flex cursor-pointer justify-center rounded outline outline-1 outline-gray-400 transition`}
+      className={`${classes} group/creds inline-flex cursor-pointer justify-center rounded outline outline-1 outline-gray-400 transition`}
       onClick={() => copyText(credential)}
     >
       <p
