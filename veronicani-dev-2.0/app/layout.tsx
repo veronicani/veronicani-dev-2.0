@@ -1,7 +1,7 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "./globals.css";
 import type { Metadata } from "next";
-import { fira, dm_serif } from "@/app/ui/fonts";
+import { fira, dm_serif } from "@/app/styles/fonts";
 
 export const metadata: Metadata = {
   title: "Veronica Ni",
