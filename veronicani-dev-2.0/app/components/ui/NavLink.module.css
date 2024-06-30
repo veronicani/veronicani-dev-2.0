@@ -1,0 +1,12 @@
+@keyframes spinOnce {
+  0% {
+    transform:(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+.spin-hover:hover .spin-element {
+  animation: spinOnce .5s cubic-bezier(.29,.01,.37,1);
+}
