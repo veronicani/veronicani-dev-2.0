@@ -1,4 +1,4 @@
-import { tNavItem, tSocialLink, tEmail, tExperience, tProject } from "./types";
+import { tNavItem, tSocialLink, tEmail, tExperience, tProject, tBrandLogo } from "./types";
 
 /** Constants for information to be used throughout the site. */
 
@@ -40,6 +40,54 @@ const SOCIAL_LINKS: tSocialLink[] = [
   //   icon: "bootstrap-icons.svg#twitter-x",
   // },
 ];
+
+const BRAND_LOGOS_COLOR = '#2462FF'
+
+const BRAND_LOGOS: tBrandLogo[] = [
+  {
+    name: "Meta",
+    path: "/static/logos_edit/meta_logo.svg",
+    alt: "Meta Logo",
+    height: 100,
+    width: 100,
+  }, 
+  {
+    name: "Reebok",
+    path: "/static/logos_edit/reebok_logo.svg",
+    alt: "Reebok Logo",
+    height: 70,
+    width: 70,
+  }, 
+  {
+    name: "National Geographic",
+    path: "/static/logos_edit/nat-geo_logo.svg",
+    alt: "National Geographic Logo",
+    height: 100,
+    width: 100,
+  }, 
+  {
+    name: "America's Test Kitchen",
+    path: "/static/logos_edit/america-test-kitchen_logo.svg",
+    alt: "America's Test Kitchen Logo",
+    height: 100,
+    width: 100,
+  }, 
+  {
+    name: "Bai Brands",
+    path: "/static/logos_edit/bai_logo.svg",
+    alt: "Bai Brands Logo",
+    height: 70,
+    width: 70,
+  }, 
+  {
+    name: "Museum of Fine Arts Boston",
+    path: "/static/logos_edit/mfa-boston_logo.svg",
+    alt: "Museum of Fine Arts Boston Logo",
+    height: 120,
+    width: 120,
+  }, 
+
+]
 
 const PROJECTS: tProject[] = [
   {
@@ -227,4 +275,12 @@ const EMAIL: tEmail = {
   url: "hello.veronicani@gmail.com",
 };
 
-export { NAV_ITEMS, SOCIAL_LINKS, PROJECTS, EXPERIENCES, EMAIL };
+export { 
+  NAV_ITEMS,
+  SOCIAL_LINKS,
+  PROJECTS,
+  EXPERIENCES,
+  EMAIL,
+  BRAND_LOGOS,
+  BRAND_LOGOS_COLOR
+};

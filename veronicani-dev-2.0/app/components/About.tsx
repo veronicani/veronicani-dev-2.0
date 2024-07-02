@@ -1,5 +1,6 @@
 import Section from "./ui/Section";
 import Image from "next/image";
+import BrandLogos from "./BrandLogos";
 
 /** About section.
  * 
@@ -36,7 +37,7 @@ export default function About() {
           Director at Black Math, Inc.
         </p>
         <p>I’ve been privileged to work with clients such as:</p>
-        {/* Insert BRAND icons here */}
+        <BrandLogos />
       </Section>
     </section>
   );

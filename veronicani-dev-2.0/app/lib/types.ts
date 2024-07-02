@@ -12,6 +12,14 @@ type tSocialLink = {
   path: string;
 };
 
+type tBrandLogo = {
+  name: string;
+  path: string;
+  alt: string;
+  height: number;
+  width: number;
+}
+
 type tProject = {
   title: string;
   urls: {
@@ -48,4 +56,4 @@ type tEmail = {
   url: string;
 };
 
-export type { tNavItem, tSocialLink, tProject, tExperience, tEmail };
+export type { tNavItem, tSocialLink, tProject, tExperience, tEmail, tBrandLogo };
