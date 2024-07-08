@@ -9,13 +9,13 @@ type tCredentials = {
 export default function Credentials({ username, password }: tCredentials ) {
   return (
     <div
-      className="flex space-x-4"
+      className="flex flex-wrap gap-x-4 gap-y-1"
     >
-      <div className="flex space-x-2 text-gray-dark font-mono">
+      <div className="flex gap-x-2 text-gray-dark font-mono">
         <span>username:</span>
         <CredentialsCopy classes="px-4" credential={username} />
       </div>
-      <div className="flex space-x-2 text-gray-dark font-mono">
+      <div className="flex gap-x-2 text-gray-dark font-mono">
         <span>password:</span>
         <CredentialsCopy classes="px-4" credential={password} />
       </div>
