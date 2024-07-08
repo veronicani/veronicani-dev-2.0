@@ -30,11 +30,11 @@ export default function CredentialsCopy({
 
   return (
     <div
-      className={`${classes} group/creds inline-flex cursor-pointer justify-center rounded outline outline-1 outline-gray-400 transition`}
+      className={`${classes} group/creds inline-flex cursor-pointer justify-center rounded outline outline-1 outline-gray-400 transition lg:hover:bg-gray-400`}
       onClick={() => copyText(credential)}
     >
       <span
-        className={`${isActive ? "inline" : "hidden"} absolute text-blue-500 transition-all lg:group-hover/creds:inline`}
+        className={`${isActive ? "inline" : "hidden"} absolute text-blue-500 transition-all lg:group-hover/creds:inline lg:group-hover/creds:text-white`}
       >
         {hoverText}
       </span>
