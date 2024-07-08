@@ -209,8 +209,8 @@ const PROJECTS: tProject[] = [
 
 const EXPERIENCES: tExperience[] = [
   {
-    position: "Software Engineer Volunteer",
-    company: "Rithm School Student Information System",
+    position: "Software Engineer",
+    company: "Live Music Project",
     location: "Remote",
     years: [2023, 2024],
     description: [
