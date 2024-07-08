@@ -24,7 +24,7 @@ export default function ExperienceCard({ experience }: tExperienceCardProps) {
         <CardHeading classes="text-blue-500" heading={position} />
         <h5 className="text-gray-dark font-bold">{company}</h5>
         <div className="flex justify-between">
-          <div className="flex gap-2">
+          <div className="flex gap-2 text-gray-light">
             <h5>{years[0]}</h5>
             {years[1] && 
               <>
@@ -33,7 +33,7 @@ export default function ExperienceCard({ experience }: tExperienceCardProps) {
               </>
             }     
           </div>
-          <h5>{location}</h5>
+          <h5 className="text-gray-light">{location}</h5>
         </div>
       </div>
       <ul className="group/bullets space-y-4">

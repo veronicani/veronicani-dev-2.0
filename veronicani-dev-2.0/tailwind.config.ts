@@ -16,6 +16,7 @@ const config: Config = {
       fontFamily: {
         "mono": ["var(--font-fira)"],
         "display": ["var(--font-dm-serif)"],
+        "sans": ["var(--font-dm-sans)"],
       },
       colors: {
         "blue": {

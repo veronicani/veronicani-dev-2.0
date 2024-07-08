@@ -8,7 +8,7 @@ type tCustomLinkProps = {
 /** Custom Link component. */
 export default function CustomLink({ displayText, url }: tCustomLinkProps) {
   return (
-    <div className="text-blue-500 hover:underline decoration-2">
+    <div className="text-blue-500 hover:underline decoration-2 font-mono">
       <a href={url}>
         {displayText}
         <i
