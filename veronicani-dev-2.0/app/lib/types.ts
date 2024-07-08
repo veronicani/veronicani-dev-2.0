@@ -15,6 +15,7 @@ type tSocialLink = {
 type tBrandLogo = {
   name: string;
   path: string;
+  id: string;
   alt: string;
   height: number;
   width: number;

@@ -47,6 +47,7 @@ const BRAND_LOGOS: tBrandLogo[] = [
   {
     name: "Meta",
     path: "/static/logos_edit/meta_logo.svg",
+    id: "#meta-logo",
     alt: "Meta Logo",
     height: 100,
     width: 100,
@@ -54,6 +55,7 @@ const BRAND_LOGOS: tBrandLogo[] = [
   {
     name: "Reebok",
     path: "/static/logos_edit/reebok_logo.svg",
+    id: "#reebok-logo",
     alt: "Reebok Logo",
     height: 70,
     width: 70,
@@ -61,6 +63,7 @@ const BRAND_LOGOS: tBrandLogo[] = [
   {
     name: "National Geographic",
     path: "/static/logos_edit/nat-geo_logo.svg",
+    id: "#nat-geo-logo",
     alt: "National Geographic Logo",
     height: 100,
     width: 100,
@@ -68,6 +71,7 @@ const BRAND_LOGOS: tBrandLogo[] = [
   {
     name: "America's Test Kitchen",
     path: "/static/logos_edit/america-test-kitchen_logo.svg",
+    id: "#america-test-kitchen-logo",
     alt: "America's Test Kitchen Logo",
     height: 100,
     width: 100,
@@ -75,16 +79,42 @@ const BRAND_LOGOS: tBrandLogo[] = [
   {
     name: "Bai Brands",
     path: "/static/logos_edit/bai_logo.svg",
+    id: "#bai-logo",
     alt: "Bai Brands Logo",
-    height: 70,
-    width: 70,
+    height: 50,
+    width: 50,
   }, 
   {
     name: "Museum of Fine Arts Boston",
     path: "/static/logos_edit/mfa-boston_logo.svg",
+    id: "#mfa-logo",
     alt: "Museum of Fine Arts Boston Logo",
     height: 120,
     width: 120,
+  }, 
+  {
+    name: "Kronos Inc.",
+    path: "/static/logos_edit/kronos_logo.svg",
+    id: "#kronos-logo",
+    alt: "Kronos Inc. Logo",
+    height: 120,
+    width: 120,
+  }, 
+  {
+    name: "Century Link",
+    path: "/static/logos_edit/century-link_logo.svg",
+    id: "#century-link-logo",
+    alt: "Century Link Logo",
+    height: 130,
+    width: 130,
+  }, 
+  {
+    name: "Kellogg's ",
+    path: "/static/logos_edit/kelloggs_logo.svg",
+    id: "#kelloggs-logo",
+    alt: "Kellogg's Logo",
+    height: 100,
+    width: 100,
   }, 
 
 ]
