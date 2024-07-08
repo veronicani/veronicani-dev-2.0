@@ -1,28 +1,33 @@
 import { tNavItem } from "@/app/lib/types";
 import Link from "next/link";
-import useHash from "../hooks/useHash";
+import useHash from "../hooks/useHash"; //unused after implementing useObserver
+import useObserver from "../hooks/useObserver";
 import applyPrefix from "../helpers/applyPrefix";
-import styles from './NavLink.module.css';
+import styles from "./NavLink.module.css";
 
 export default function NavLink({ link }: { link: tNavItem }) {
-  const isActive = link.href === useHash();
+  const isActive = link.href === useObserver();
 
   const navIndicatorInactive = "w-2 bg-gray-400";
   const navIndicatorActive = "w-12 bg-blue-500";
-  const navIndicatorHover = applyPrefix("group-hover", navIndicatorActive);
+  // applies 'group-hover' prefix to active classes for tailwind
+  // w-12 bg-blue-500 -> group-hover:w-12 group-hover:bg-blue-500
+  const navIndicatorHover = applyPrefix("group-hover", "bg-blue-500");
 
-  const navTextInactive = "text-gray-dark ";
+  const navTextInactive = "text-gray-dark";
   const navTextActive = "font-bold text-blue-500";
   const navTextHover = applyPrefix("group-hover", navTextActive);
 
   return (
     <Link
       href={`${link.href}`}
-      className={`group flex items-center gap-2 ${styles['spin-hover']}`}
+      className={`group flex items-center gap-2 ${styles["spin-hover"]}`}
     >
-      <div className={`nav-cross flex items-center ${!isActive ? styles['spin-element'] : ""}`}>
+      <div
+        className={`nav-cross flex items-center ${!isActive ? styles["spin-element"] : ""}`}
+      >
         <span
-          className={`z-1 absolute start-1 h-2 w-[2px] -translate-x-1/2 rounded transition-all group-hover:bg-blue-500 motion-reduce:transition-none ${
+          className={`z-1 absolute start-1 h-2 w-[2px] -translate-x-1/2 rounded transition-all ${navIndicatorHover} motion-reduce:transition-none ${
             isActive ? "bg-blue-500" : "bg-gray-400"
           }`}
         ></span>
