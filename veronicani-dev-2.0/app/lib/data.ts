@@ -129,8 +129,8 @@ const PROJECTS: tProject[] = [
     imageUrl: "veronicani-com-demo.gif",
     imageAlt: "Demo of veronicani.com",
     description:
-      "A bespoke website designed with Webflow to showcase my design and" +
-      " illustration practice.",
+      `A bespoke website designed with Webflow to showcase my design and
+      illustration practice.`,
   },
   {
     title: "Flask Cafe",
@@ -159,9 +159,9 @@ const PROJECTS: tProject[] = [
     imageUrl: "flaskcafe-demo.gif",
     imageAlt: "Demo of Flask Cafe app",
     description:
-      "A full stack MVP Flask application with Google Maps API integration to" +
-      " allow users to browse cafes, add new cafes, favorite cafes, and" +
-      " add menu specialties.",
+      `A full stack MVP Flask application with Google Maps API integration to
+      allow users to browse cafes, add new cafes, favorite cafes, and
+      add menu specialties.`,
   },
   {
     title: "Jobly",
@@ -183,11 +183,11 @@ const PROJECTS: tProject[] = [
     imageUrl: "jobly-demo.gif",
     imageAlt: "Demo of Jobly app",
     description:
-      "A job board application built with a React frontend. It includes a" +
-      " RESTful API to interface with an Express backend and uses a relational" +
-      " database to store user and company records. Full authentication and" +
-      " authorization routes built for users and admin, tested with Jest at" +
-      " 99% coverage.",
+      `A job board application built with a React frontend. It includes a
+      RESTful API to interface with an Express backend and uses a relational
+      database to store user and company records. Full authentication and
+      authorization routes built for users and admin, tested with Jest at
+      99% coverage.`,
     notes: "The server may be sleeping 💤, and needs a minute to wake up!",
   },
   {
@@ -200,102 +200,120 @@ const PROJECTS: tProject[] = [
     imageUrl: "sharebnb-demo.gif",
     imageAlt: "Demo of Sharebnb app",
     description:
-      "Full stack space-sharing application with a React frontend. It" +
-      " interfaces with a RESTful Flask API, and integrates AWS S3 for" +
-      " photo storage. Users can browse, search, and add listings on the site.",
+      `Full stack space-sharing application with a React frontend. It
+      interfaces with a RESTful Flask API, and integrates AWS S3 for
+      photo storage. Users can browse, search, and add listings on the site.`,
     notes: "The server may be sleeping 💤, and needs a minute to wake up!",
   },
 ];
 
 const EXPERIENCES: tExperience[] = [
   {
-    position: "Software Engineer",
+    position: "Software Engineer Intern",
+    company: "Schrödinger Inc.",
+    location: "NYC",
+    years: ["May 2025", "present"], 
+    description: [
+      `Developing graphical molecular dynamics analysis tools using Python, PyQt,
+       and an MVC framework. Applying test-driven development and object-oriented
+       principles to build scalable features with rigorous unit testing.`,
+      `Using Agile methodologies to manage the software development lifecycle,
+       drafting Jira tickets, planning code design, and organizing project work
+       into tasks to ensure on-time delivery.`,
+      `Collaborating with UX, product managers, scientific stakeholders, and
+       other developers to clarify feature requirements, using diagrams and
+       specs to align teams on design. Coordinated with documentation and QA
+       teams for successful feature release.`,
+    ],
+  },
+   {
+    position: "UX Design Intern",
+    company: "ClinicMind Inc.",
+    location: "Remote",
+    years: ["Oct 2024", "May 2025"], 
+    description: [
+      `Designed end-to-end user experiences for patient intake across mobile, web,
+       and kiosk platforms using Figma and Adobe Illustrator. Redesigned complex
+       navigation flows and expanded selection options to improve patient
+       adoption and usability.`,
+      `Maintained and extended the design system by re-organizing the icon library
+       to align with developer workflows, and established new design standards
+       for modals and features. Created detailed UX specifications and interactive
+       prototypes to streamline design-to-development handoff.`,
+      `Engaged users and stakeholders via interviews and workshops to define
+       project requirements, and communicated progress through biweekly
+       presentations. Managed projects and tasks in GitLab and partnered with
+       engineering lead to ensure design solutions were technically viable.`,
+    ],
+  },
+  {
+    position: "Software Engineer, UI",
+    company: "Naviguide Inc.",
+    location: "Remote",
+    years: ["Jul 2024", "Nov 2024"], 
+    description: [
+      `Led the UX/UI design and implementation of a consumer website using
+       React and Tailwind CSS. Created detailed Figma prototypes and UX
+       specifications for different user-facing dashboards.`,
+      `Developed a multi-step user onboarding flow, including user authentication
+       and backend data connection. Developed authorization process that verified
+       parental consent before granting platform access to student users.`,
+      `Managed project tasks and tracked progress via Jira tickets and continuous
+       team updates. Collaborated with the engineering lead to validate and
+       optimize technical implementation.`,
+    ],
+  },
+  {
+    position: "Fullstack Software Engineer (Volunteer)",
     company: "Live Music Project",
     location: "Remote",
-    years: [2023, 2024],
+    years: ["Mar 2024", "Jul 2024"], 
     description: [
-      "Contributing as a volunteer for Live Music Project, a 501(c)3 nonprofit" +
-        " organization dedicated to increasing arts access and arts community," +
-        " focused on classical and contemporary music events.",
-      "Updating documentation, performing bug fixes, performing QA, and" +
-        " maintaining legacy and modern frameworks, with Django," +
-        " Django Rest Framework, and React.",
-      "Implementing new features such as reCAPTCHA integration for" +
-        " Spontaneous Free Tickets, a ticket donation and drawing platform set" +
-        " to launch Fall 2024.",
+      `Refactored and maintained a legacy codebase (Django, DRF, React),
+       improving stability, performance, and maintainability, while
+       integrating third-party features like reCAPTCHA validation.`,
     ],
   },
   {
     position: "Software Engineer Intern",
-    company: "Rithm School Student Information System",
+    company: "Rithm Student Information System",
     location: "Remote",
-    years: [2023, 2024],
+    years: ["Jan 2024", "Feb 2024"], 
     description: [
-      "Implemented site-wide tagging system to optimize search results for" +
-        " curriculum resources.",
-      " Wrote model factories with Django’s factory_boy to streamline testing" +
-        " process for tagging system, in accordance to best practices and" +
-        " codebase requirements, with 99% test coverage.",
-      "Presented research findings of database architecture for user, staff," +
-        " and student data to enhance team understanding within two days of" +
-        " introduction to a 80,000~ line codebase.",
-      "Communicated regularly with project leads according to Agile" +
-        " methodologies, and shared resources and problem-solving approaches" +
-        " with team members through pair programming.",
+      `Implemented a RDBMS-based tagging system to improve search functionality
+       across a Django-based SaaS platform. Streamlined testing using third party
+       libraries for model generation, and achieved 99% test coverage of new features.`,
     ],
   },
   {
-    position: "Assistant English Language Teacher",
-    company: "Kanazawa Board of Education x Jet Program",
+    position: "Assistant Language Teacher",
+    company: "Japan Exchange and Teaching Program",
     location: "Japan",
-    years: [2021, 2023],
+    years: ["2021", "2023"],
     description: [
-      "Revamped documentation of onboarding packet for incoming teachers to" +
-        " streamline cultural immersion and understanding of educational" +
-        " policies, workplace procedures.",
-      "Implemented online tools, games, and visual lessons in classrooms with" +
-        " focus on accessibility and internationalization, resulting in" +
-        " increased student engagement with curriculum material.",
-      "Led community activities and offered guidance on cultural adaptation and" +
-        " daily life as an area leader.",
-    ],
-  },
-  {
-    position: "Art Director, Senior Designer",
-    company: "Black Math, Inc.",
-    location: "Boston",
-    years: [2016, 2020],
-    description: [
-      "Spearheaded conceptual design to final delivery of design systems and" +
-        " branding campaigns for digital platforms, web and televison animation," +
-        " live events, and visual effects. Clients included: America's" +
-        " Test Kitchen, Arnold, Bai Brands, Earth Shoes, Facebook, Harvard" +
-        " Business School, Instagram, Kellogg’s, Boston Museum of Fine Arts," +
-        " National Geographic, Reebok, Starbucks, and more.",
-      "Established effective design processes and flexible workflow pipelines," +
-        " ensuring consistent timely delivery of design deliverables under" +
-        " tight deadlines and evolving project requirements.",
-      "Collaborated with clients, resourced freelance talent, pitched creative" +
-        " concepts to senior management, and supported design and animation" +
-        " teams in maintaining style consistency and quality.",
+      `Rapidly designed, customized, and taught K-12 lesson plans to meet
+       specific classroom needs across six Japanese public schools. Introduced
+       online tools and intercultural lessons, and assessed student progress
+       through homework, tests, and EIKEN/speech contest preparation.`,
+      `Self-taught N3 Japanese and business etiquette to successfully operate
+       in a 100% Japanese workplace. Served as a US Cultural Ambassador and
+       Area Leader, providing mentorship and advice on cultural adjustment and
+       daily living while organizing community activities.`,
     ],
   },
   {
     position: "Art Director",
-    company: "MassDigi Innovation Program",
-    location: "Worcester, Providence",
-    years: [2015, 2016],
+    company: "Black Math Inc.",
+    location: "Boston",
+    years: ["2016", "2020"],
     description: [
-      "Developed a mobile game from start to launch on iOS and Android in a" +
-        " team of programmers and designers.",
-      "Ensured optimization of assets according to game-standard" +
-        " specifications, for Unity deployment.",
-      "Collaborated with programmers, project managers, and designers to solve" +
-        " UI/UX, design, and technical challenges.",
-      "Drove artistic direction and maintained team communication to ensure" +
-        " branding consistency for commercial release in the App and Google" +
-        " Play Stores. Created branding documentation to streamline onboarding" +
-        " new designers.",
+      `Spearheaded concept-to-delivery of branding campaigns in multiple domains
+       (online, web/TV animation, live action/events, VFX, installation). Clients
+       include America’s Test Kitchen, Meta, Instagram, Kellogg’s,
+       National Geographic, Reebok, Boston Museum of Fine Arts, and Starbucks.`,
+      `Ensured consistent delivery of design assets under tight deadlines and
+       evolving requirements. Pitched creative concepts, managed staff/freelance
+       talent, and collaborated with animation/production teams.`,
     ],
   },
 ];

@@ -48,7 +48,7 @@ type tExperience = {
   position: string;
   company: string;
   location: string;
-  years: [number, number];
+  years: [string, string];
   description: string[];
 };
 
