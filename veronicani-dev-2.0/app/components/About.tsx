@@ -26,12 +26,12 @@ export default function About() {
         </p>
         <p>🤝 <strong>I start every task by asking questions and listening</strong>,
          to ensure I understand the problem completely before implementing a solution.</p>
-        <p>🗺️ <strong>Adept at taking full ownership of projects</strong> and
+        <p>🗺️ <strong>I&apos;m adept at taking full ownership of projects</strong> and
          breaking down complex, difficult goals into manageable tasks with
          clear documentation and defined next steps.</p>
-        <p>🎨 <strong>Leveraging hands-on enterprise UI/UX experience</strong>,
-         I ensure designers understand technical limits without jargon, making
-         sure no design details fall through the cracks during development.</p>
+        <p>🎨 <strong>With hands-on enterprise UI/UX experience</strong>,
+         I make sure designers understand technical limits without jargon, and ensure
+         that design details do not fall through the cracks during development.</p>
         <p>🥳 <strong>I take the work seriously but not myself.</strong> I
          celebrate others on my team and handle difficult situations with humor,
          actively boosting morale by finding the fun in small things.</p>
