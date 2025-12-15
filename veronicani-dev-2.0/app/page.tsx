@@ -21,8 +21,8 @@ export default function Home() {
         </header>
         <main className="max-w-2xl md:pb-8 lg:pt-16 lg:pb-20">
           <About />
-          <Projects />
           <Experience />
+          <Projects />
           <Contact />
           <Footer />
         </main>

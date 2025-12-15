@@ -21,7 +21,7 @@ export default function About() {
           User-centric software engineer with strong project ownership and
           and collaboration skills from previous experience in UX design, 
           creative advertising, and education. I combine my UI/UX expertise to
-          deliver featuers that exceed expectations, focusing on well-designed,
+          deliver features that exceed expectations, focusing on well-designed,
           robustly tested, and scalable code.
         </p>
         <p>🤝 <strong>I start every task by asking questions and listening</strong>,

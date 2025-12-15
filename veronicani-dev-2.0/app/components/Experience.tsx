@@ -28,7 +28,7 @@ export default function Experience() {
         <ButtonLink
           icon="bi-link-45deg"
           text="Resume PDF"
-          url="/static/files/resume.pdf"
+          url="/static/files/ni-veronica_resume.pdf"
         />
       </div>
     </Section>

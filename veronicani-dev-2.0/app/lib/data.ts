@@ -8,12 +8,12 @@ const NAV_ITEMS: tNavItem[] = [
     href: "#about",
   },
   {
-    name: "Projects",
-    href: "#projects",
-  },
-  {
     name: "Experience",
     href: "#experience",
+  },
+  {
+    name: "Projects",
+    href: "#projects",
   },
   {
     name: "Contact",
