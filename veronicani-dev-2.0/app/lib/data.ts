@@ -209,80 +209,87 @@ const PROJECTS: tProject[] = [
 
 const EXPERIENCES: tExperience[] = [
   {
-    position: "Software Engineer Intern",
+    position: "Developer I",
     company: "Schrödinger Inc.",
-    location: "NYC",
+    location: "New York",
     years: ["May 2025", "present"], 
     description: [
-      `Developing graphical molecular dynamics analysis tools using Python, PyQt,
-       and an MVC framework. Applying test-driven development and object-oriented
-       principles to build scalable features with rigorous unit testing.`,
-      `Using Agile methodologies to manage the software development lifecycle,
-       drafting Jira tickets, planning code design, and organizing project work
-       into tasks to ensure on-time delivery.`,
-      `Collaborating with UX, product managers, scientific stakeholders, and
-       other developers to clarify feature requirements, using diagrams and
-       specs to align teams on design. Coordinated with documentation and QA
-       teams for successful feature release.`,
+      `Accelerating drug discovery workflows by developing graphical molecular
+       dynamics analysis tools using Python, PyQt, and an MVC framework.
+       Applying test-driven development and object-oriented principles to build
+       scalable features with rigorous unit testing.`,
+      `Scaling org-wide AI adoption as member of the Agentic DevX working group.
+       Authoring educational newsletters on responsible use of AI and
+       facilitating cross-department workshops on integrating agents into the
+       software development lifecycle.`,
+      `Operating in an Agile environment, drafting Jira tickets, architecting
+       code, and organizing work into deliverable tasks to ensure on-time
+       feature releases.`,
+      `Collaborating with UX designers, product managers, scientific
+       stakeholders, and QA teams; applying UX principles to bridge
+       communication between teams and align on complex requirements.`,
     ],
   },
-   {
-    position: "UX Design Intern",
+  {
+    position: "UX Designer (Intern, Contractor)",
     company: "ClinicMind Inc.",
     location: "Remote",
     years: ["Oct 2024", "May 2025"], 
     description: [
-      `Designed end-to-end user experiences for patient intake across mobile, web,
-       and kiosk platforms using Figma and Adobe Illustrator. Redesigned complex
-       navigation flows and expanded selection options to improve patient
-       adoption and usability.`,
-      `Maintained and extended the design system by re-organizing the icon library
-       to align with developer workflows, and established new design standards
-       for modals and features. Created detailed UX specifications and interactive
-       prototypes to streamline design-to-development handoff.`,
-      `Engaged users and stakeholders via interviews and workshops to define
-       project requirements, and communicated progress through biweekly
-       presentations. Managed projects and tasks in GitLab and partnered with
-       engineering lead to ensure design solutions were technically viable.`,
+      `Designed a unified patient intake system across mobile, web, and kiosk
+       platforms using Figma and Adobe Illustrator. Simplified navigation and
+       expanded selection options to increase user adoption and accessibility.`,
+      `Rearchitected the design system to achieve 1:1 parity with the Material
+       Icon API, enabling developers to map assets directly to code via
+       standardized naming.`,
+      `Maintained and extended the design system, establishing new standards for
+       modals and features. Created detailed UX specs and interactive prototypes
+       to streamline design-to-development handoff.`,
+      `Accelerated product discovery by facilitating stakeholder workshops to
+       define requirements and partnering with engineering leads to validate
+       technical feasibility prior to high-fidelity handoff.`,
     ],
   },
   {
     position: "Software Engineer, UI",
-    company: "Naviguide Inc.",
-    location: "Remote",
+    company: "NaviGuide Inc.",
+    location: "New York",
     years: ["Jul 2024", "Nov 2024"], 
     description: [
-      `Led the UX/UI design and implementation of a consumer website using
-       React and Tailwind CSS. Created detailed Figma prototypes and UX
-       specifications for different user-facing dashboards.`,
-      `Developed a multi-step user onboarding flow, including user authentication
-       and backend data connection. Developed authorization process that verified
-       parental consent before granting platform access to student users.`,
-      `Managed project tasks and tracked progress via Jira tickets and continuous
-       team updates. Collaborated with the engineering lead to validate and
-       optimize technical implementation.`,
+      `Led the UX/UI design and implementation of a consumer website using React
+       and Tailwind CSS to secure VC interest and strategic partnerships
+       (Pursuit, Boys & Girls Club). Created detailed Figma prototypes and UX
+       specifications for multiple user-facing dashboards.`,
+      `Engineered a multi-step user onboarding flow using PHP Laravel,
+       including user authentication, backend data connection, and an
+       authorization process enforcing parental consent for student users.`,
+      `Managed project tasks via Jira, maintained continuous team alignment,
+       and collaborated with engineering lead to validate and optimize
+       technical decisions throughout development.`,
     ],
   },
   {
     position: "Fullstack Software Engineer (Volunteer)",
     company: "Live Music Project",
-    location: "Remote",
+    location: "New York",
     years: ["Mar 2024", "Jul 2024"], 
     description: [
-      `Refactored and maintained a legacy codebase (Django, DRF, React),
-       improving stability, performance, and maintainability, while
-       integrating third-party features like reCAPTCHA validation.`,
+      `Refactored and maintained a legacy codebase (Django, Django REST
+       Framework, React), improving stability, performance, and
+       maintainability, while integrating third-party features like reCAPTCHA
+       validation.`,
     ],
   },
   {
     position: "Software Engineer Intern",
-    company: "Rithm Student Information System",
+    company: "Rithm School - Student Information System",
     location: "Remote",
     years: ["Jan 2024", "Feb 2024"], 
     description: [
       `Implemented a RDBMS-based tagging system to improve search functionality
-       across a Django-based SaaS platform. Streamlined testing using third party
-       libraries for model generation, and achieved 99% test coverage of new features.`,
+       in a Django and PostgreSQL based platform. Streamlined testing using
+       third party libraries for model generation, and achieved 99% unit test
+       coverage of new features.`,
     ],
   },
   {
@@ -291,21 +298,18 @@ const EXPERIENCES: tExperience[] = [
     location: "Japan",
     years: ["2021", "2023"],
     description: [
-      `Rapidly designed, customized, and taught K-12 lesson plans to meet
-       specific classroom needs across six Japanese public schools. Introduced
-       online tools and intercultural lessons, and assessed student progress
-       through homework, tests, and EIKEN/speech contest preparation.`,
-      `Self-taught N3 Japanese and business etiquette to successfully operate
-       in a 100% Japanese workplace. Served as a US Cultural Ambassador and
-       Area Leader, providing mentorship and advice on cultural adjustment and
-       daily living while organizing community activities.`,
+      `Rapidly designed and taught K-12 lesson plans across six Japanese public
+       schools.`,
+      `Self-taught N3 Japanese to operate in a 100% Japanese workplace. Served
+       as Area Leader and US Cultural Ambassador, mentoring peers on cultural
+       adjustment while organizing community activities.`,
     ],
   },
   {
     position: "Art Director",
     company: "Black Math Inc.",
     location: "Boston",
-    years: ["2016", "2020"],
+    years: ["Sep 2016", "Aug 2020"],
     description: [
       `Spearheaded concept-to-delivery of branding campaigns in multiple domains
        (online, web/TV animation, live action/events, VFX, installation). Clients
